@@ -21,6 +21,10 @@ import { COOKIE_SESSION_KEY_ONE } from './types'
       - Barrel modules could be affecting JS file size significantly in larger-scale projects, which could affect website's user experience
       - Continuous integration stages times could be affected by a large percent
       - Bundlers might encounter issues when TypeScript is combined with barrel modules
+
+    JSDoc has been used throughout the application only to describe different Classes, functions and types.
+    Its functionality of type checking is disabled inside the TS compiler configuration file.
+    When enabling type checking of JSDoc, make sure that the types are correctly described.
 */
 
 const PORT = process.env.PORT || 3000
