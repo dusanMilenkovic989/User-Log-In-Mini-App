@@ -14,6 +14,13 @@ import { COOKIE_SESSION_KEY_ONE } from './types'
       3. Associate route configuration info with the _Controller class methods by using decorators and metadata
       4. All method decorators execute on class definition interpretation, bottom to top, with the class decorator running last
       5. Class decorator reads metadata for each method and adds complete route definitions to the router
+
+    This app is using barrel modules.
+    Be aware that barrel modules could cause unwanted effects:
+      - Some testing frameworks (Jest) might take longer time to run tests when parsing barrel modules. Barrel modules intentionally obfuscate file location and testing frameworks could have to load every export inside it to find its target
+      - Barrel modules could be affecting JS file size significantly in larger-scale projects, which could affect website's user experience
+      - Continuous integration stages times could be affected by a large percent
+      - Bundlers might encounter issues when TypeScript is combined with barrel modules
 */
 
 const PORT = process.env.PORT || 3000
