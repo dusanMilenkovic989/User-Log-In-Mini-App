@@ -15,6 +15,8 @@ class RootController
 {
     /**
      * Sets up `get` HTTP request route handler.
+     * @template Request Express's object type. Describes request object data structure.
+     * @template Response Express's object type. Describes response object data structure.
      * @param {Request} req HTTP request data.
      * @param {Response} res HTTP response data.
      * @returns {void} No return value.
@@ -34,6 +36,8 @@ class RootController
 
     /**
      * Sets up `get` HTTP request route handler.
+     * @template Request Express's object type. Describes request object data structure.
+     * @template Response Express's object type. Describes response object data structure.
      * @param {Request} req HTTP request data.
      * @param {Response} res HTTP response data.
      * @returns {void} No return value.

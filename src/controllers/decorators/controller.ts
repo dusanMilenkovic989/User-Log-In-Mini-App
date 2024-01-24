@@ -7,7 +7,9 @@ import { METADATA_KEYS, HTTPMethodValue } from '../../types'
 const ROUTER = AppRouter.getInstance
 
 /**
- * Decorator factory which collects metadata - HTTP method, server route path, middlewares (if any) and request body validator (if any) - registered for every Class method and sets up router. Argument provided will be used as a route's path prefix for each route set up on router.
+ * Decorator factory which collects metadata - HTTP method, server route path, middlewares (if any) and request body validator (if any) - registered for every Class method and sets up router. 
+ * 
+ * Argument provided will be used as a route's path prefix for each route set up on router.
  * @param {string} routePrefix A route's path prefix for each route set up on router.
  * @returns {Function} Returns class decorator.
  */

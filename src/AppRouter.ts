@@ -5,10 +5,14 @@ import { Router } from 'express'
  */
 class AppRouter
 {
+    /**
+     * @template Router Express's object type. Describes structure of a router.
+     */
     private static instance: Router
 
     /**
      * Accessor tasked with creating a router instance, if there was none, and returning it.
+     * @template Router Express's object type. Describes structure of a router.
      * @returns {Router} Returns a router instance.
      */
     static get getInstance(): Router

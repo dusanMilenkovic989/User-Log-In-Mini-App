@@ -26,7 +26,7 @@ const ERROR_MESSAGES = {
 } as const
 
 /**
- * HTML templates used for server responses
+ * HTML templates used for server responses.
  */
 const TEMPLATES = {
     userLogInFormTemplate: `
@@ -84,7 +84,7 @@ const FIXTURES = {
 } as const
 
 /**
- * Keys under which metadata value is be stored.
+ * Keys under which metadata value is stored.
  */
 const METADATA_KEYS = {
     method: 'method',
