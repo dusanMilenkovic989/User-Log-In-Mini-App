@@ -18,5 +18,4 @@ interface HandlerPropertyDescriptor extends PropertyDescriptor
  */
 type HTTPMethodValue = keyof typeof HTTP_METHODS
 
-
 export type { HandlerPropertyDescriptor, HTTPMethodValue }
